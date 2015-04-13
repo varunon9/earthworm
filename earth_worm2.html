@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Earthworm2</title>
+		<meta charset="utf-8"/>
+		<style type="text/css">
+			body{
+			  overflow:hidden;
+			}
+			.worm li{
+			  position:absolute;
+			  height:8px;
+			  width:8px;
+			  left:238px;
+			  top:238px;
+			  //left:0;
+			  //top:0;
+			  border-radius:50%;
+			  background-color:black;
+			  //transition:linear 4s;
+			}
+			ul.worm{
+			  list-style-type:none;
+			}
+			.worm li:nth-child(1),li:nth-child(30){
+			  background-color:red;
+			}
+			#id1{
+			  transition: linear 5s;
+			}
+			#id2{
+			  transition: linear 5.2s;
+			}
+			#id3{
+			  transition: linear 5.4s;
+			}
+			#id4{
+			  transition: linear 5.6s;
+			}
+			#id5{
+			  transition: linear 5.8s;
+			}
+			#id6{
+			  transition: linear 6s;
+			}
+			#id7{
+			  transition: linear 6.2s;
+			}
+			#id8{
+			  transition: linear 6.4s;
+			}
+			#id9{
+			  transition: linear 6.6s;
+			}
+			#id10{
+			  transition: linear 6.8s;
+			}
+			#id11{
+			  transition: linear 7s;
+			}
+			#id12{
+			  transition: linear 7.2s;
+			}
+			#id13{
+			  transition: linear 7.4s;
+			}
+			#id14{
+			  transition: linear 7.6s;
+			}
+			#id15{
+			  transition: linear 7.8s;
+			}
+			#id16{
+			  transition: linear 8s;
+			}
+			#id17{
+			  transition: linear 8.2s;
+			}
+			#id18{
+			  transition: linear 8.4s;
+			}
+			#id19{
+			  transition: linear 8.6s;
+			}
+			#id20{
+			  transition: linear 8.8s;
+			}
+			#id21{
+			  transition: linear 9s;
+			}
+			#id22{
+			  transition: linear 9.2s;
+			}
+			#id23{
+			  transition: linear 9.4s;
+			}
+			#id24{
+			  transition: linear 9.6s;
+			}
+			#id25{
+			  transition: linear 9.8s;
+			}
+			#id26{
+			  transition: linear 10s;
+			}
+			#id27{
+			  transition: linear 10.2s;
+			}
+			#id28{
+			  transition: linear 10.4s;
+			}
+			#id29{
+			  transition: linear 10.6s;
+			}
+			#id30{
+			  transition: linear 10.8s;
+			}
+		</style>
+		<script type="text/javascript" src="jquery.js"></script>
+	</head>
+	<body>
+		<ul class="worm">
+			<li id="id1"></li>
+			<li id="id2"></li>
+			<li id="id3"></li>
+			<li id="id4"></li>
+			<li id="id5"></li>
+			<li id="id6"></li>
+			<li id="id7"></li>
+			<li id="id8"></li>
+			<li id="id9"></li>
+			<li id="id10"></li>
+			<li id="id11"></li>
+			<li id="id12"></li>
+			<li id="id13"></li>
+			<li id="id14"></li>
+			<li id="id15"></li>
+			<li id="id16"></li>
+			<li id="id17"></li>
+			<li id="id18"></li>
+			<li id="id19"></li>
+			<li id="id20"></li>
+			<li id="id21"></li>
+			<li id="id22"></li>
+			<li id="id23"></li>
+			<li id="id24"></li>
+			<li id="id25"></li>
+			<li id="id26"></li>
+			<li id="id27"></li>
+			<li id="id28"></li>
+			<li id="id29"></li>
+			<li id="id30"></li>
+		</ul>
+		<script type="text/javascript">
+					
+			$(document).ready(function(){
+				
+				$(document).mousemove(function(event){
+				
+					//var a=document.getElementById('first').left.value;
+					//var b=document.getElementById("first").top;
+				   //var a=$('#first').css('left');
+				   //var b=$('#first').css('top');
+				   //var a=parseInt($('#first').css('left'),10);
+				   //var b=parseInt($('#first').css('top'),10);
+					var x=event.pageX;
+					var y=event.pageY;//alert(x);
+					var num=1;
+					var elem;
+					for(var i=1;i<=30;i++){
+						elem='.worm li:nth-child('+num+')';
+						$(elem).css("left",x);
+						$(elem).css("top",y);
+						num++;
+						
+					}
+			});
+				
+		});
+			
+		</script>
+	</body>
+</html>
